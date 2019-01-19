@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "home.html" %}
+{% block body_block %}
+ <center><font color=#ff1493 size="50pt"><h1> Welcome to Emp Form</h1></font></center>
+<center>
+
+
+
+    <form method="POST">
+    {{ form.as_p }}
+        <input type="submit" >
+        {% csrf_token %}
+    </form>
+
+</center>
+{% endblock %}

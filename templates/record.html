@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends "home.html" %}
+{% block body_block %}
+ <center><font color=#f4a460 size="50pt"><h1> Welcome to Record Page</h1></font>
+<h2>{{ msg | upper }}</h2></center>
+<center>
+<table border="2pt"  >
+<th>EMP ID</th>
+<th>EMP NO</th>
+<th>EMP Name</th>
+<th>EMP Sal</th>
+<th>EMP Add</th>
+<th> Modify </th>
+  {% for item in data %}
+     <tr>
+         <td>{{item.id}}</td>
+         <td>{{item.eno}} </td>
+         <td>{{ item.ename}}</td>
+         <td>{{ item.esal}}</td>
+         <td>{{ item.eadd}}</td>
+         <td><a href="#">Update</a> &nbsp <a href="#"> Delete</a></td>
+     </tr>
+   {% endfor %}
+</table>
+</center>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<link rel="stylesheet" href="{% static "css/effect.css" %}">
+</head>
+<body>
+<center><div>
+    <a href="home"><button class="button">Home</button></a>
+<a href="sign"><button class="button">Singup</button></a>
+<a href="/accounts/login"><button class="button">Login</button></a>
+<a href="/accounts/logout"><button class="button">Logout</button></a>
+<a href="java"><button class="button">Java</button></a>
+<a href="python"><button class="button">Python</button></a>
+    <a href="record"><button class="button">Record</button></a>
+    <a href="display"><button class="button">Cust Form</button></a>
+     <a href="emp"><button class="button">Emp Form</button></a>
+</div>
+</center>
+
+{% block body_block %}
+    <center><font color="#8b0000" size="50pt"><h1> Welcome to Home Page</h1></font></center>
+{% endblock %}
+
+<div>
+    <br>
+    <br>
+    <br>
+<img src="{% static "image/pic.jpg" %}">
+</div>
+
+
+</body>
+</html>
